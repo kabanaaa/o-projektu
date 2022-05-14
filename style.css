@@ -6,3 +6,55 @@ html {
   font-size: 15px;
   font-family: sans-serif;
 }
+
+.header {
+  display: flex;
+  background-color: rgb(197, 111, 214);
+}
+
+.container {
+  display: flex;
+  /*   flex-direction: row-reverse;
+  justify-content: flex-end; */
+}
+
+.container_project,
+.container_about_us {
+  /*   flex-direction: row-reverse;
+ */
+  justify-content: flex-end;
+}
+
+.title,
+.container_project,
+.container_aboutUs {
+  margin: 4px;
+  font-size: 8px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.text,
+.textAbout,
+.medailon {
+  font-size: 10px;
+}
+
+.medailon_item {
+  padding-left: 0px;
+  list-style-type: none;
+  font-size: 10px;
+}
+
+@media (max-width: 300px) {
+  .html {
+    width: auto;
+  }
+}
+
+@media (min-width: 800px) {
+  .html {
+    width: 75%;
+    margin: auto;
+  }
+}
