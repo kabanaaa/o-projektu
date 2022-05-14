@@ -8,20 +8,11 @@ html {
 }
 
 .header {
-  display: flex;
   background-color: rgb(197, 111, 214);
 }
 
 .container {
   display: flex;
-  /*   flex-direction: row-reverse;
-  justify-content: flex-end; */
-}
-
-.container_project,
-.container_about_us {
-  /*   flex-direction: row-reverse;
- */
   justify-content: flex-end;
 }
 
