@@ -7,16 +7,14 @@ html {
   font-family: sans-serif;
 }
 
-.header {
-  background-color: rgb(197, 111, 214);
-}
-
 .container {
+  background-color: rgb(176, 171, 179);
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  padding: 10px;
 }
 
-.container1,
+.title,
 .container2_project,
 .container2_aboutUs {
   margin: 4px;
@@ -36,20 +34,48 @@ a {
   font-weight: bold;
 }
 
+a,
+.title,
+.container2_project,
+.container2_aboutUs:hover {
+  color: rgb(44, 172, 172);
+}
+
 .medailon_item {
   padding-left: 0px;
   list-style-type: none;
   font-size: 10px;
 }
 
-@media (max-width: 300px) {
-  .html {
+@media (max-width: 400px) {
+  body {
     width: auto;
+  }
+
+  .container {
+    padding: 5px;
+  }
+  .container2 {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .title,
+  .container2_project,
+  .container2_aboutUs {
+    font-size: 12px;
+  }
+
+  .medailon_item,
+  .text,
+  .textAbout,
+  .medailon {
+    font-size: 10px;
   }
 }
 
 @media (min-width: 800px) {
-  .html {
+  .body {
     width: 75%;
     margin: auto;
   }
