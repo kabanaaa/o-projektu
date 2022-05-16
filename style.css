@@ -23,6 +23,10 @@ html {
   text-decoration: none;
 }
 
+.container1,
+.container2 {
+  text-shadow: 0.5px 0.5px 1px black;
+}
 .text,
 .textAbout,
 .medailon {
