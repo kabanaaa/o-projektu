@@ -58,7 +58,6 @@ p {
   padding: 20px;
 }
 
-.hrefProject,
 .hrefKB,
 .hrefSM,
 .hrefCzechitas {
@@ -72,7 +71,14 @@ p {
 .hrefSM:hover,
 .hrefCzechitas:focus {
   color: rgb(252, 252, 252);
-}
+  }
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  }
+
 
 .medailon_item {
   padding: 10px 20px 10px 20px;
