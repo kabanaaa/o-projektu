@@ -101,11 +101,19 @@ h5 {
   filter: invert(100%);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   body {
-    width: auto;
+    max-width: 100%;
+    max-height: auto;
+    box-sizing: border-box;
   }
 
+  .textkocka,
+  .homeJezek {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+  }
   .container {
     padding: 5px;
   }
@@ -124,6 +132,7 @@ h5 {
   .text,
   .medailon {
     font-size: 10px;
+    height: 80%;
   }
 }
 
