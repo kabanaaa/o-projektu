@@ -2,8 +2,8 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 15px;
+body {
+  margin: 0;
   font-family: sans-serif;
 }
 
@@ -14,6 +14,24 @@ html {
   padding: 10px;
 }
 
+.text,
+.home {
+  background-color: rgba(148, 201, 201, 0.995);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.textkocka,
+.homeJezek {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1),
+    0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1);
+}
+.homeJezek {
+  width: 611px;
+  height: 428px;
+}
 .title,
 .container2_project,
 .container2_aboutUs {
@@ -27,46 +45,74 @@ html {
 .container2 {
   text-shadow: 0.5px 0.5px 1px black;
 }
-.text,
+
+.homeText,
 .textAbout,
 .medailon {
   font-size: 15px;
-}
-
-.textAbout {
   text-shadow: 0.5px 0.5px 1px gray;
+  background-color: rgba(148, 201, 201, 0.995);
 }
 
-a {
+p {
+  margin: 0;
+  padding: 20px;
+}
+
+.hrefProject,
+.hrefKB,
+.hrefSM,
+.hrefCzechitas {
   text-decoration: none;
   font-weight: bold;
+  color: black;
 }
 
-a,
+.hrefProject,
+.hrefKB:hover,
+.hrefSM:hover,
+.hrefCzechitas:hover {
+  color: rgb(252, 252, 252);
+}
+
 .title,
 .container2_project,
-.container2_aboutUs:hover {
+.container2_aboutUs {
   color: rgb(44, 172, 172);
 }
 
 .medailon_item {
-  padding-left: 0px;
+  padding: 10px 20px 10px 20px;
   list-style-type: none;
-  font-size: 10px;
+  margin: 0;
+  text-shadow: 0.5px 0.5px 1px gray;
+  font-size: 15px;
 }
 
-.kocka{
-  margin-left: 30%;
-  padding-top: 5px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, .1), 
-  0 2px 2px rgba(0, 0, 0, .1), 
-  0 4px 4px rgba(0, 0, 0, .1), 
-  0 8px 8px rgba(0, 0, 0, .1);
- }
- 
+h5 {
+  text-shadow: 0.5px 0.5px 1px gray;
+  font-size: 15px;
+  margin: 0;
+  padding: 15px 20px 10px 20px;
+}
+
+.footer {
+  background-color: rgb(176, 171, 179);
+  height: 40px;
+  display: flex;
+  justify-content: end;
+  padding-bottom: 0;
+}
+
+.post {
+  width: 5rem;
+  height: 2.5rem;
+  filter: invert(100%);
+}
 
 @media (max-width: 400px) {
-  body {
+  body,
+  .textAbout {
     width: auto;
   }
 
