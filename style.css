@@ -8,14 +8,16 @@ html {
 body {
   margin: 0;
   font-family: sans-serif;
-  max-width: 70%;
-  margin: 10% 15% 10% 15%;
+  width: 250px;
+  height: min-content;
+  margin: 2% 25% 2% 25%;
 }
 
 .container {
   background-color: rgb(176, 171, 179);
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   padding: 10px;
 }
 
@@ -23,7 +25,7 @@ body {
 .container2_project,
 .container2_aboutUs {
   margin: 4px;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   text-decoration: none;
   color: rgb(44, 172, 172);
@@ -47,13 +49,12 @@ body {
 
 .homeJezek {
   width: 100%;
-  height: auto;
 }
 
 .home,
 .text,
 .medailon {
-  font-size: 15px;
+  font-size: 10px;
   text-shadow: 0.5px 0.5px 1px gray;
   background-color: rgba(148, 201, 201, 0.995);
   text-align: justify;
@@ -116,15 +117,9 @@ h5 {
 }
 
 @media (max-width: 450px) {
-  body {
-    max-height: auto;
-    box-sizing: border-box;
-  }
-
   .textkocka,
   .homeJezek {
     max-width: 100%;
-    height: auto;
     box-sizing: border-box;
   }
   .container {
@@ -138,7 +133,7 @@ h5 {
   .title,
   .container2_project,
   .container2_aboutUs {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .home,
@@ -155,31 +150,43 @@ h5 {
 }
 
 @media (min-width: 450px) {
-  .body {
+  body {
     width: auto;
-    height: 50%;
-    margin: auto;
+  }
+  .container {
+    padding: 5px;
+  }
+
+  .container2 {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .title,
+  .container2_project,
+  .container2_aboutUs {
+    font-size: 10px;
+  }
+
+  .home,
+  .text,
+  .medailon {
+    font-size: 10px;
   }
 
   .textkocka,
   .homeJezek {
     max-width: 100%;
-    height: auto;
-    box-sizing: border-box;
   }
 }
 
 @media (min-width: 700px) {
-  .body {
+  body {
     width: auto;
-    height: 50%;
-    margin: auto;
   }
 
   .textkocka,
   .homeJezek {
     max-width: 100%;
-    height: auto;
-    box-sizing: border-box;
   }
 }
