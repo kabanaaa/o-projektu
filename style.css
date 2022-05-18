@@ -2,9 +2,14 @@
   box-sizing: border-box;
 }
 
+html {
+  background-image: url('./img/wall.jpg');
+}
 body {
   margin: 0;
   font-family: sans-serif;
+  max-width: 70%;
+  margin: 10% 15% 10% 15%;
 }
 
 .container {
@@ -41,8 +46,8 @@ body {
 }
 
 .homeJezek {
-  width: 500px;
-  height: 328px;
+  width: 100%;
+  height: auto;
 }
 
 .home,
@@ -51,6 +56,7 @@ body {
   font-size: 15px;
   text-shadow: 0.5px 0.5px 1px gray;
   background-color: rgba(148, 201, 201, 0.995);
+  text-align: justify;
 }
 
 p {
@@ -111,7 +117,6 @@ h5 {
 
 @media (max-width: 450px) {
   body {
-    max-width: 100%;
     max-height: auto;
     box-sizing: border-box;
   }
@@ -149,9 +154,32 @@ h5 {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 450px) {
   .body {
-    width: 75%;
+    width: auto;
+    height: 50%;
     margin: auto;
+  }
+
+  .textkocka,
+  .homeJezek {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 700px) {
+  .body {
+    width: auto;
+    height: 50%;
+    margin: auto;
+  }
+
+  .textkocka,
+  .homeJezek {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
   }
 }
