@@ -66,26 +66,28 @@ p {
   color: black;
 }
 
-.hrefProject,
+.hrefProject:hover,
 .hrefKB:hover,
 .hrefSM:hover,
-.hrefCzechitas:focus {
+.hrefCzechitas:hover {
   color: rgb(252, 252, 252);
-  }
+}
 
 a {
   text-decoration: none;
   font-weight: bold;
   color: black;
-  }
-
+}
 
 .medailon_item {
   padding: 10px 20px 10px 20px;
   list-style-type: none;
   margin: 0;
 }
-
+.smajlik {
+  height: 12px;
+  width: 12px;
+}
 h5 {
   text-shadow: 0.5px 0.5px 1px gray;
   font-size: 15px;
@@ -139,6 +141,11 @@ h5 {
   .medailon {
     font-size: 10px;
     height: 80%;
+  }
+
+  .smajlik {
+    height: 9px;
+    width: 9px;
   }
 }
 
