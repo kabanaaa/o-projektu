@@ -39,6 +39,7 @@ body {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
+  text-shadow: 0.5px 0.5px 1px grey;
 }
 
 .textkocka,
@@ -54,7 +55,7 @@ body {
 .home,
 .text,
 .medailon {
-  font-size: 10px;
+  font-size: 15px;
   text-shadow: 0.5px 0.5px 1px gray;
   background-color: rgba(148, 201, 201, 0.995);
   text-align: justify;
@@ -162,18 +163,6 @@ h5 {
     flex-wrap: nowrap;
   }
 
-  .title,
-  .container2_project,
-  .container2_aboutUs {
-    font-size: 10px;
-  }
-
-  .home,
-  .text,
-  .medailon {
-    font-size: 10px;
-  }
-
   .textkocka,
   .homeJezek {
     max-width: 100%;
@@ -183,6 +172,11 @@ h5 {
 @media (min-width: 700px) {
   body {
     width: auto;
+  }
+
+  .textkocka,
+  .homeJezek {
+    max-width: 100%;
   }
 
   .textkocka,
