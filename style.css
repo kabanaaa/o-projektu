@@ -6,7 +6,6 @@ html {
   background-image: url('./img/wall.jpg');
 }
 body {
-  margin: 0;
   font-family: sans-serif;
   width: 250px;
   height: min-content;
@@ -18,7 +17,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding: 10px;
 }
 
 .title,
@@ -33,12 +31,13 @@ body {
 }
 
 .text,
-.home {
+.home,
+.medailon {
   background-color: rgba(148, 201, 201, 0.995);
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
   justify-content: center;
+  text-align: justify;
   text-shadow: 0.5px 0.5px 1px grey;
 }
 
@@ -51,15 +50,6 @@ body {
 
 .homeJezek {
   width: 100%;
-}
-
-.home,
-.text,
-.medailon {
-  font-size: 15px;
-  text-shadow: 0.5px 0.5px 1px gray;
-  background-color: rgba(148, 201, 201, 0.995);
-  text-align: justify;
 }
 
 p {
